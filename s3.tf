@@ -20,6 +20,7 @@ resource "aws_s3_bucket_object" "data_object" {
     Name        = "${local.resource_prefix.value}-customer-master"
     Environment = local.resource_prefix.value
   }
+  
 }
 
 resource "aws_s3_bucket" "financials" {
